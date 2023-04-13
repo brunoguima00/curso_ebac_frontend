@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header{
+    background-color:#2f3640 ;
+    padding: 16px 0;
+    color: #f5f6fa;
+
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+header li {
+    display: inline; /* essa propridade diz como o elemento será exibido */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a{
+    color: #f5f6fa;
+    text-decoration: none;
+
+}
+
+/* Ajusta a aparência para diferentes telas */
+.container {
+    width: 1366px;
+    margin:0 auto 0 auto;
+}
+
+/* flexbox */
+.articles{
+    display: flex;
+    flex-wrap: wrap; /* Diz para criar uma linha quando a divisão do tamanho do arquivo acapar */
+    justify-content: space-between; /* Divide o espaço que sobra entre os elementos( 100% cada elemento 30% sobra 10%) */
+}
+
+/* Pega os artigos dentro do articles e delimita a altura, quando delimitamos altura a largura se ajusta para manter a proporção */
+.articles article img {
+   /* height: 180px; */
+   width: 100%;
+}
+
+/* Pega 100% da tela e divide os articles em 3 30% para cada article depois coloca a propriedade flex-wrap  na classe para que crie uma linha automaticamente se o espaço acabar */
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+
+}
+
+section h2, .articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a{
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2{
+    font-size: 32px;
+}
+
+#sports {
+    background-color: rgba(0,255,0,0.1);
+}
+
+#sports .articles article a {
+    background-color: rgba(0,255,0,0.8);
+    color: #000;
+}
+
+#economy  {
+    background-color: #f8f59a;
+}
+
+#economy .articles article a{
+    background-color: #ff9f1a;
+}
+
+#travel {
+    background-color: #ADD8E6;
+}
+
+#travel .articles article a{
+    background-color: #1E90FF;
+}
+
+#tecnology {
+    background-color: #D3D3D3;
+}
+
+#tecnology .articles article a {
+background-color: #a9a9a9;
+}
