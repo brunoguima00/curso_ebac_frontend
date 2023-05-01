@@ -5,10 +5,11 @@ form.addEventListener('submit',function(e){
 
     const campoA = document.getElementById('number-a'); 
     const campoB = document.getElementById('number-b');
-    parseInt(campoA);
-    parseInt(campoB);
 
-    if(campoA.value < campoB.value) {
+    const valorA = parseInt(campoA.value);
+    const valorB = parseInt(campoB.value);
+
+    if(valorA < valorB) {
         alert('Formulário Válido');
     } else {
         alert('Formulário Inválido');
