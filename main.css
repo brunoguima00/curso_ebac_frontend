@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;  
+}
+
+.container {
+    margin: 80px;
+    max-width: 640px;
+    width: 100%;
+}
+
+
+form {
+    margin-top: 40px;
+}
+
+input, textarea, button {
+    display: block; /* Coloca os elementos um embaixo do outro*/
+    padding: 8px; /* Padding dentro do elemento*/
+    margin-bottom: 8px; /* Margem abaixo*/
+    width: 100%; /* Tamanho do elemento em relação a div?*/
+    resize: none; /* Boqueia o aumento do elemento*/
+}
+
+button {
+    background-color: #581d22;
+    border: none; /* Remove a borda do botão*/
+    text-transform: uppercase; /* Transoforma o texto escrito no botão em uppercase*/
+    color: azure;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer; /*  Muda o cursor ao passar o mouse encima do botão */
+}
+
+button:hover{ /* Bloco de código para ações quando o mouse fica em cima do botão*/
+    background-color: #8a3d44;
+}
